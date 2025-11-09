@@ -2,8 +2,7 @@ import random
 import time
 
 number = random.randint(1, 5)
-guess = int(input("welcome to the number guessing game!
-Guess a number from 1 to 5: "))
+guess = int(input("Welcome to the number guessing game!\nGuess a number from 1 to 5: "))
 
 if guess == number:
     print("You won!")
