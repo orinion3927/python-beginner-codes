@@ -7,3 +7,5 @@ elif number <= 4:
     print("you are a baby")
 else:
     print("you are a child")
+
+# do not copy this code or other codes from the repository "python beginner codes". (in github)
