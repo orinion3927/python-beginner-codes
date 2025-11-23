@@ -7,3 +7,4 @@ if name == "yes":
         print("correct password")
     else:
         print("wrong password")
+# do not copy this code or other codes from the repository "python beginner codes". (in github)
