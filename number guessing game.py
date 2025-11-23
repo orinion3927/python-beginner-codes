@@ -10,3 +10,4 @@ else:
     print("You lose.")
 
 print("The number was:", number)
+# do not copy this code or other codes from the repository "python beginner codes". (in github)
