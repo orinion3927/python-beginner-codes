@@ -47,3 +47,4 @@ while True:
         print("Goodbye, " + name + "! See you next time!")
         print("------------------------------------------------------------------------------------")
         break
+# do not copy this code or other codes from the repository "python beginner codes". (in github)
