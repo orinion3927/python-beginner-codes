@@ -51,7 +51,7 @@ else:
                 print()
                 print()
                 print()
-                print()
+                print("==test completed==")
         else:
             print("access denied")
             continue
