@@ -33,7 +33,7 @@ else:
                 print("------------------------------------------------------------------------------------")
                 print()
                 print("hello, " + name)
-                print("my name is AI.PROTOTYPE_385. this is the first version, but soon I will become a smart AI calculator.")
+                print("my name is AI.PROTOTYPE_385. this is version 2.0, but soon I will become a smart AI calculator.")
                 print("(if you want, you can try a version that ChatGPT made — this is what the creator wants to make.)")
                 print()
                 print()
