@@ -10,3 +10,4 @@ def draw_square(x1, y1, x2, y2, color):
 def clear_canvas():
     canvas.delete("all")
 root.mainloop()
+# do not copy this code or other codes from the repository "python beginner codes". (in github)
