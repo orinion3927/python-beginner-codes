@@ -1,3 +1,4 @@
+# do not copy this code or other codes from the repository "python beginner codes". (in github)
 #password = Pas$W0rd193
 import time
 
@@ -15,7 +16,7 @@ else:
             print()
             print("access granted")
             x=input("do you want to continue to the smart_AI_calculator test? (yes/no): ")
-            if x == "yes" or x == "yeah":
+            if x == "yes" or x == "yeah" or x == "y" or x == "sure":
                 time.sleep(0.1)
                 print("continuing...")
                 time.sleep(1)
@@ -37,7 +38,7 @@ else:
                 print("(if you want, you can try a version that ChatGPT made — this is what the creator wants to make.)")
                 print()
                 print()
-                print()
+                print("==test completed==")
                 print()
                 print()
                 print()
@@ -53,7 +54,7 @@ else:
                 print()
                 print("==test completed==")
         else:
-            print("access denied")
+            print("access denied, please try again.")
             continue
         break
 
