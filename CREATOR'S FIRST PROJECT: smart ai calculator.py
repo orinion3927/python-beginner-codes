@@ -1,48 +1,66 @@
-# do not copy this code or other codes from the repository "python beginner codes". (in github)
-#password = Pas$W0rd193
+#password: Pas$W0rd193
 import time
 
-if SyntaxError == True:
-    print("there is an error in the code. please fix it and try again.")
-else:
-    while True:
-        a=input("please Enter password: ")
-        if a == "Pas$W0rd193":
+def List():
+    print("password: Pas$W0rd193")
+    print("version: 3.0")
+    print("credits: created by orinion")
+
+def AboutMe():
+    print("i am an AI prototype created by orinion.")
+    print("i am currently in version 3.0, but soon i will become a smart AI calculator.")
+    print("i can perform basic calculations and help you with simple math problems.")
+    print("i am constantly learning and improving, so stay tuned for future updates!")
+
+while True:
+    Try = input("please Enter password: ")
+    if Try == "Pas$W0rd193":
+        print("------------------------------------------------------------------------------------")
+        print()
+        print("checking...")
+        print()
+        time.sleep(1)
+        print()
+        print("access granted")
+        choise = input("do you want to continue to the smart_AI test? (yes/no): ")
+        if choise == "yes" or choise == "yeah" or choise == "y" or choise == "sure":
+            time.sleep(0.1)
+            print("continuing...")
+            time.sleep(1)
+            print("opening files...")
+            time.sleep(1)
+            print("starting program...")
+            time.sleep(1)
             print("------------------------------------------------------------------------------------")
             print()
-            print("checking...")
-            print()
+            name = input("hello, what is your name? ")
+            time.sleep(0.1)
+            print("loading...")
             time.sleep(1)
             print()
-            print("access granted")
-            x=input("do you want to continue to the smart_AI_calculator test? (yes/no): ")
-            if x == "yes" or x == "yeah" or x == "y" or x == "sure":
-                time.sleep(0.1)
-                print("continuing...")
-                time.sleep(1)
-                print("opening files...")
-                time.sleep(1)
-                print("starting program...")
-                time.sleep(1)
+            print("------------------------------------------------------------------------------------")
+            print()
+            print("hello, " + name)
+            print("my name is AI.PROTOTYPE_385.")
+            print("(if you want, you can try a version that ChatGPT made)")
+            print()
+            print()
+            print("so what do you want to do " + name + "?")
+            print("the options are:")
+            print()
+            print("1. get to know more about me (write 'about me')")
+            print("2. exit the program (write 'exit')")
+            print("3. check the list (write 'list')")
+            print()
+            choise_from_options = input("please enter your choise: ")
+            if choise_from_options == "about me":
                 print("------------------------------------------------------------------------------------")
                 print()
-                name = input("hello, what is your name? ")
-                time.sleep(0.1)
-                print("loading...")
-                time.sleep(1)
+                AboutMe()
                 print()
                 print("------------------------------------------------------------------------------------")
                 print()
-                print("hello, " + name)
-                print("my name is AI.PROTOTYPE_385. this is version 2.0, but soon I will become a smart AI calculator.")
-                print("(if you want, you can try a version that ChatGPT made — this is what the creator wants to make.)")
-                print()
-                print()
-                print("==test completed==")
-                print()
-                print()
-                print()
-            else:
+            elif choise_from_options == "exit":
                 time.sleep(0.1)
                 print("exiting...")
                 time.sleep(1)
@@ -53,9 +71,38 @@ else:
                 print()
                 print()
                 print("==test completed==")
+
+            elif choise_from_options == "list":
+                print("------------------------------------------------------------------------------------")
+                print()
+                List()
+                print()
+                print("------------------------------------------------------------------------------------")
+                print()
+                print("==test completed==")
+
         else:
-            print("access denied, please try again.")
-            continue
-        break
+            print("invalid choise. exiting...")
+            time.sleep(1)
+            print("goodbye! see ya later!")
+            print()
+            print()
+            print()
+            print()
+            print()
+            print("==test completed==")
+
+    else:
+        time.sleep(0.1)
+        print("exiting...")
+        time.sleep(1)
+        print("goodbye! see ya later!")
+        print()
+        print()
+        print()
+        print()
+        print()
+        print("==test completed==")
+    break
 
 # do not copy this code or other codes from the repository "python beginner codes". (in github)
