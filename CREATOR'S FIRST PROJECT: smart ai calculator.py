@@ -8,8 +8,7 @@ def List():
 
 def AboutMe():
     print("i am an AI prototype created by orinion.")
-    print("i am currently in version 3.0, but soon i will become a smart AI calculator.")
-    print("i can perform basic calculations and help you with simple math problems.")
+    print("i am currently in version 3.0, but soon i will become an smart AI.")
     print("i am constantly learning and improving, so stay tuned for future updates!")
 
 while True:
