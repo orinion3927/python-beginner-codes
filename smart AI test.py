@@ -1,15 +1,48 @@
 #password: Pas$W0rd193
+import random
 import time
 
 def List():
+    print()
+    print("------------------------------------------------------------------------------------")
     print("password: Pas$W0rd193")
-    print("version: 3.5")
+    print("version: 3.7")
     print("credits: created by orinion")
+    print("------------------------------------------------------------------------------------")
+    print()
 
 def AboutMe():
+    print()
+    print("------------------------------------------------------------------------------------")
     print("i am an AI prototype created by orinion.")
-    print("i am currently in version 3.5")
+    print("i am currently in version 3.7")
     print("i am constantly learning and improving, so stay tuned for future updates!")
+    print("--------------------------------------------------------------------------------")
+    print()
+
+def NumberGuessingGame():
+    NumberGuessingGameTrueAnswer = random.randint(1, 5)
+    guess = int(input("Welcome to the number guessing game!\nGuess a number from 1 to 5: "))
+    if guess == NumberGuessingGameTrueAnswer:
+        print("You won!")
+    else:
+        print("You lose.")
+    print("The number was:", NumberGuessingGameTrueAnswer)
+
+def AgeScanner():
+    print()
+    print("------------------------------------------------------------------------------------")
+    age=int(input("please enter your age: "))
+    if age >= 67:
+        print("you are an old man")
+    elif age >= 18:
+        print("you are an adult")
+    elif age <= 4:
+        print("you are a baby")
+    else:
+        print("you are a child")
+    print("------------------------------------------------------------------------------------")
+    print()
 
 while True:
     Try = input("please Enter password: ")
@@ -50,17 +83,16 @@ while True:
                 print("1. get to know more about me (write 'about me')")
                 print("2. exit the program (write 'exit')")
                 print("3. check the list (write 'list')")
+                print("4. play the number guessing game (write 'number guessing game')")
+                print("5. age scanner (write 'age scanner')")
                 print()
                 choise_from_options = input("please enter your choise: ")
+
                 if choise_from_options == "about me":
-                    print("------------------------------------------------------------------------------------")
-                    print()
                     AboutMe()
                     print()
-                    print("------------------------------------------------------------------------------------")
-                    print()
                     back_to_options=input("wanna go back to the options menu? (yes/no): ")
-                    if back_to_options == "yes" or back_to_options == "y" or back_to_options == "sure" or back_to_options == "yeah":
+                    if back_to_options in ["yes","y","sure","yeah"]:
                         time.sleep(0.1)
                         print("going back to options menu...")
                         time.sleep(1)
@@ -92,14 +124,10 @@ while True:
                     exit()
 
                 elif choise_from_options == "list":
-                    print("------------------------------------------------------------------------------------")
-                    print()
                     List()
                     print()
-                    print("------------------------------------------------------------------------------------")
-                    print()
                     back_to_options=input("wanna go back to the options menu? (yes/no): ")
-                    if back_to_options == "yes" or back_to_options == "y" or back_to_options == "sure" or back_to_options == "yeah":
+                    if back_to_options in ["yes","y","sure","yeah"]:
                         time.sleep(0.1)
                         print("going back to options menu...")
                         time.sleep(1)
@@ -116,6 +144,51 @@ while True:
                         print()
                         print("==test completed==")
                         exit()
+
+                elif choise_from_options == "number guessing game":
+                    NumberGuessingGame()
+                    print()
+                    back_to_options=input("wanna go back to the options menu? (yes/no): ")
+                    if back_to_options in ["yes","y","sure","yeah"]:
+                        time.sleep(0.1)
+                        print("going back to options menu...")
+                        time.sleep(1)
+                        continue
+                    else:
+                        time.sleep(0.1)
+                        print("exiting...")
+                        time.sleep(1)
+                        print("goodbye! see ya later!")
+                        print()
+                        print()
+                        print()
+                        print()
+                        print()
+                        print("==test completed==")
+                        exit()
+
+                elif choise_from_options == "age scanner":
+                    AgeScanner()
+                    print()
+                    back_to_options=input("wanna go back to the options menu? (yes/no): ")
+                    if back_to_options in ["yes","y","sure","yeah"]:
+                        time.sleep(0.1)
+                        print("going back to options menu...")
+                        time.sleep(1)
+                        continue
+                    else:
+                        time.sleep(0.1)
+                        print("exiting...")
+                        time.sleep(1)
+                        print("goodbye! see ya later!")
+                        print()
+                        print()
+                        print()
+                        print()
+                        print()
+                        print("==test completed==")
+                        exit()
+
         else:
             print("invalid choise. exiting...")
             time.sleep(1)
