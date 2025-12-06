@@ -17,17 +17,26 @@ def AboutMe():
     print("i am an AI prototype created by orinion.")
     print("i am currently in version 3.7")
     print("i am constantly learning and improving, so stay tuned for future updates!")
-    print("--------------------------------------------------------------------------------")
+    print("------------------------------------------------------------------------------------")
     print()
 
 def NumberGuessingGame():
-    NumberGuessingGameTrueAnswer = random.randint(1, 5)
+    print()
+    print("------------------------------------------------------------------------------------")
+    TrueAnswer = random.randint(1, 5)
     guess = int(input("Welcome to the number guessing game!\nGuess a number from 1 to 5: "))
-    if guess == NumberGuessingGameTrueAnswer:
+    if guess == TrueAnswer:
         print("You won!")
     else:
         print("You lose.")
-    print("The number was:", NumberGuessingGameTrueAnswer)
+    print("The number was:", TrueAnswer)
+    TryAgainChoise = input("Do you want to try again? (yes/no): ")
+    if TryAgainChoise in ["yes", "y", "sure", "yeah"]:
+        NumberGuessingGame()
+    else:
+        print("exiting the number guessing game...")
+    print("------------------------------------------------------------------------------------")
+    print()
 
 def AgeScanner():
     print()
