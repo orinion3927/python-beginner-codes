@@ -94,15 +94,15 @@ while True:
                 print("so what do you want to do " + name + "?")
                 print("the options are:")
                 print()
-                print("1. get to know more about me (write 'about me')")
-                print("2. exit the program (write 'exit')")
-                print("3. check the list (write 'list')")
-                print("4. play the number guessing game (write 'number guessing game')")
-                print("5. age scanner (write 'age scanner')")
+                print("1. get to know more about me (write 'about me' or '1')")
+                print("2. exit the program (write 'exit' or '2')")
+                print("3. check the list (write 'list' or '3')")
+                print("4. play the number guessing game (write 'number guessing game' or '4')")
+                print("5. age scanner (write 'age scanner' or '5')")
                 print()
                 choise_from_options = input("please enter your choise: ")
 
-                if choise_from_options == "about me":
+                if choise_from_options == "about me" or choise_from_options == "1":
                     AboutMe()
                     print()
                     back_to_options=input("wanna go back to the options menu? (yes/no): ")
@@ -124,7 +124,7 @@ while True:
                         print("==test completed==")
                         exit()
 
-                elif choise_from_options == "exit":
+                elif choise_from_options == "exit" or choise_from_options == "2":
                     time.sleep(0.1)
                     print("exiting...")
                     time.sleep(1)
@@ -137,7 +137,7 @@ while True:
                     print("==test completed==")
                     exit()
 
-                elif choise_from_options == "list":
+                elif choise_from_options == "list" or choise_from_options == "3":
                     List()
                     print()
                     back_to_options=input("wanna go back to the options menu? (yes/no): ")
@@ -159,7 +159,7 @@ while True:
                         print("==test completed==")
                         exit()
 
-                elif choise_from_options == "number guessing game":
+                elif choise_from_options == "number guessing game" or choise_from_options == "4":
                     NumberGuessingGame()
                     print()
                     back_to_options=input("wanna go back to the options menu? (yes/no): ")
@@ -181,7 +181,7 @@ while True:
                         print("==test completed==")
                         exit()
 
-                elif choise_from_options == "age scanner":
+                elif choise_from_options == "age scanner" or choise_from_options == "5":
                     AgeScanner()
                     print()
                     back_to_options=input("wanna go back to the options menu? (yes/no): ")
