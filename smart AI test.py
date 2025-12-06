@@ -6,7 +6,7 @@ def List():
     print()
     print("------------------------------------------------------------------------------------")
     print("password: Pas$W0rd193")
-    print("version: 3.7")
+    print("version: 3.8")
     print("credits: created by orinion")
     print("------------------------------------------------------------------------------------")
     print()
@@ -15,7 +15,7 @@ def AboutMe():
     print()
     print("------------------------------------------------------------------------------------")
     print("i am an AI prototype created by orinion.")
-    print("i am currently in version 3.7")
+    print("i am currently in version 3.8")
     print("i am constantly learning and improving, so stay tuned for future updates!")
     print("------------------------------------------------------------------------------------")
     print()
@@ -30,8 +30,8 @@ def NumberGuessingGame():
     else:
         print("You lose.")
     print("The number was:", TrueAnswer)
-    TryAgainChoise = input("Do you want to try again? (yes/no): ")
-    if TryAgainChoise in ["yes", "y", "sure", "yeah"]:
+    NTryAgainChoice = input("Do you want to try again? (yes/no): ")
+    if NTryAgainChoice in ["yes", "y", "sure", "yeah"]:
         NumberGuessingGame()
     else:
         print("exiting the number guessing game...")
@@ -50,6 +50,11 @@ def AgeScanner():
         print("you are a baby")
     else:
         print("you are a child")
+    ATryAgainChoice = input("Do you want to try again? (yes/no): ")
+    if ATryAgainChoice in ["yes", "y", "sure", "yeah"]:
+        AgeScanner()
+    else:
+        print("exiting the age scanner...")
     print("------------------------------------------------------------------------------------")
     print()
 
