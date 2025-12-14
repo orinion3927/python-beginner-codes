@@ -1,6 +1,43 @@
 #password: Pas$W0rd193
 import random
 import time
+import turtle
+
+
+def write_with_outline(text, x, y, font=("Arial", 30, "normal"), color="white", outline="black"):
+    turtle.penup()
+
+    
+    for dx, dy in [(-2, -2), (-2, 2), (2, -2), (2, 2)]:
+        turtle.goto(x + dx, y + dy)
+        turtle.color(outline)
+        turtle.write(text, align="center", font=font)
+
+    
+    turtle.goto(x, y)
+    turtle.color(color)
+    turtle.write(text, align="center", font=font)
+
+
+
+screen = turtle.Screen()
+screen.title("AI.PROTOTYPE_385")
+screen.setup(width=1300, height=800)
+
+
+screen.bgpic("LoadingScreen.gif")
+
+
+
+turtle.hideturtle()
+turtle.speed(0)
+
+write_with_outline("AI.PROTOTYPE_385", 0, 0, font=("Arial", 30, "normal"), color="white", outline="black")
+write_with_outline("Loading...", 0, -40, font=("Arial", 20, "normal"), color="white", outline="black")
+
+time.sleep(2)
+turtle.bye()
+
 
 def List():
     print()
@@ -42,7 +79,10 @@ def AgeScanner():
     print()
     print("------------------------------------------------------------------------------------")
     age=int(input("please enter your age: "))
-    if age >= 67:
+    if age >= 120:
+        print("BRO ARE YOU KIDDING ME? DONT LIE")
+        exit()
+    elif age >= 67:
         print("you are an old man")
     elif age >= 18:
         print("you are an adult")
@@ -57,6 +97,7 @@ def AgeScanner():
         print("exiting the age scanner...")
     print("------------------------------------------------------------------------------------")
     print()
+
 
 while True:
     Try = input("please Enter password: ")
@@ -200,6 +241,8 @@ while True:
                         print()
                         print()
                         print()
+                        print()
+                        print()
                         print("==test completed==")
                         exit()
 
@@ -217,15 +260,8 @@ while True:
 
     else:
         time.sleep(0.1)
-        print("exiting...")
+        print("wrong password. trying again...")
         time.sleep(1)
-        print("goodbye! see ya later!")
-        print()
-        print()
-        print()
-        print()
-        print()
-        print("==test completed==")
-        exit()
+        continue
 
 # do not copy this code or other codes from the repository "python beginner codes". (in github)
