@@ -39,27 +39,31 @@ def NumberGuessingGame():
     print()
 
 def AgeScanner():
-    print()
-    print("------------------------------------------------------------------------------------")
-    age=int(input("please enter your age: "))
-    if age >= 120:
-        print("BRO ARE YOU KIDDING ME? DONT LIE")
-        exit()
-    elif age >= 67:
-        print("you are an old man")
-    elif age >= 18:
-        print("you are an adult")
-    elif age <= 4:
-        print("you are a baby")
-    else:
-        print("you are a child")
-    ATryAgainChoice = input("Do you want to try again? (yes/no): ")
-    if ATryAgainChoice in ["yes", "y", "sure", "yeah"]:
+    try:
+        print()
+        print("------------------------------------------------------------------------------------")
+        age=int(input("please enter your age: "))
+        if age >= 120:
+            print("BRO ARE YOU KIDDING ME? DONT LIE")
+            exit()
+        elif age >= 67:
+            print("you are an old man")
+        elif age >= 18:
+            print("you are an adult")
+        elif age <= 4:
+            print("you are a baby")
+        else:
+            print("you are a child")
+        ATryAgainChoice = input("Do you want to try again? (yes/no): ")
+        if ATryAgainChoice in ["yes", "y", "sure", "yeah"]:
+            AgeScanner()
+        else:
+            print("exiting the age scanner...")
+        print("------------------------------------------------------------------------------------")
+        print()
+    except ValueError:
+        print("invalid input. please enter a number.")
         AgeScanner()
-    else:
-        print("exiting the age scanner...")
-    print("------------------------------------------------------------------------------------")
-    print()
 
 
 while True:
